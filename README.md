@@ -11,6 +11,8 @@ DATASET
 =========
 1. Original: `gait_final_output.csv`
 2. Cleaned: `gait_final_output_updated.csv`
+> Data Source/Credit: https://archive.ics.uci.edu/dataset/604/gait+classification
+
 
 GAIT ANALYSIS NOTEBOOK VERSIONS - QUICK REFERENCE
 ==================================================
