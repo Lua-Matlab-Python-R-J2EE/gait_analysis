@@ -2,7 +2,9 @@
 
 ABOUT THE PROJECT
 -----------------
-This is a machine learning (ML) study of gait data, exploring nine supervised and unsupervised approaches to understand model behavior, feature importance, and methodological best practices. It demonstrates strong applied ML skills, including data cleaning, pipeline engineering, cross-validation design, oversampling strategies, evaluation under extreme data constraints, and the prevention of data leakage. The work highlights both what works and what fails, providing a clear, rigorous analysis suitable for real-world ML problem-solving.
+- This is a machine learning (ML) study of gait data, exploring nine supervised (classifcation) and unsupervised (clustering) approaches to understand model behavior, feature importance, and methodological best practices. 
+- It demonstrates strong applied ML skills, including data cleaning, pipeline engineering, cross-validation design, oversampling strategies, evaluation under extreme data constraints, and the prevention of data leakage. 
+- The work highlights both what works and what fails, providing a clear, rigorous analysis suitable for real-world ML problem-solving.
 
 
 DATASET
