@@ -1,5 +1,10 @@
-# gait_analysis
-machine learning based gait analysis
+# gait_analysis: 
+
+
+DATASET
+=========
+1. original: gait_final_output.csv
+2. cleaned: gait_final_output_updated.csv
 
 GAIT ANALYSIS NOTEBOOK VERSIONS - QUICK REFERENCE
 ==================================================
