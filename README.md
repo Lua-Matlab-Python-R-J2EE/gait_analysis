@@ -22,7 +22,7 @@ MAIN COMPARISON TABLE
 | v1_6   | LOOCV Pre-Oversample        | None (use all data)                        | SMOTE / RandomOverSampler (before CV)          | LOOCV (480 folds)            | **YES**       | No                   | 99.4% accuracy (leakage)                               | Feature discriminability only               | Invalid methodology  |
 | v1_7   | StratifiedKFold Pipeline    | None (use all data)                        | RandomOverSampler (in pipeline)                | StratifiedKFold (2-fold)     | No            | No                   | Best k=10 features, stable results                    | Feature analysis, model comparison           | Best for tiny data   |
 | v1_8   | Train/Test Pipeline         | 65/35 train/test                           | RandomOverSampler (in pipeline)                | None                         | No            | No                   | 88.2%, but unstable (1 test/class)                    | Standard ML practice                         | Data waste           |
-| v1_9   | Unsupervised Clustering     | None (use all data)                        | None (unsupervised)                            | None (clustering)            | N/A           | N/A                  | DBSCAN: reduces 16 classes → 2 clusters               | Exploratory analysis, class reduction        | Valid alternative    |
+| v1_9   | Unsupervised Clustering     | None (use all data)                        | None (unsupervised)                            | None (clustering)            | N/A           | N/A                  | DBSCAN: reduces 16 classes -> 2 clusters               | Exploratory analysis, class reduction        | Valid alternative    |
 
 
 
