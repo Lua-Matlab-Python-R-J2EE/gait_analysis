@@ -1,4 +1,4 @@
-# gait_analysis: machine learning based supervised and un-supervised gait analysis
+# Machine learning based supervised and un-supervised gait analysis
 
 
 DATASET
