@@ -98,7 +98,6 @@ Want to:
   - Understand data leakage? --> v1_4, v1_6 (what NOT to do)  
   - Analyze features properly? --> v1_7
   - Learn correct methodology? --> v1_7, v1_8
-  - ---
   - Deploy biometric system? --> None (need person-independent approach with more data)
   - Get real-world accuracy? --> None (all test on same subjects seen in training)
 
