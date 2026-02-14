@@ -93,8 +93,8 @@ PERFORMANCE SUMMARY
 RECOMMENDATION BY USE CASE
 ---------------------------
 Best Practices
-- Feature Analysis: v1_7
 - Model Comparison: v1_2
+- Feature Analysis: v1_7
 - Class Reduction: v1_9
 
 
@@ -104,15 +104,16 @@ What NOT to Do
 - v1_6: Oversampling before CV
 
 Avoid These
-- v1_4, v1_6 - Contaminated test folds
 - v1_3 - Invalid performance
+- v1_4, v1_6 - Contaminated test folds
+
 
 QUICK DECISION GUIDE
 ---------------------
-- Analyze features? - v1_7  
 - Compare models? - v1_2  
-- Reduce classes? - v1_9  
 - Understand leakage? - v1_4, v1_6  
+- Analyze features? - v1_7  
+- Reduce classes? - v1_9  
 - Learn correct methodology? - v1_7, v1_8  
 - Deploy biometric system? - None (need person-independent data)  
 - Get real-world accuracy? - None (train/test overlap subjects)
