@@ -2,8 +2,11 @@
 
 Problem Statement
 -----------------
-- Can gait patterns reliably distinguish between individuals using wearable sensor data? This project investigates that question under a severe real-world constraint: only 48 samples across 16 classes. Rather than forcing a single model to fit inadequate data, this study systematically evaluates nine ML pipeline configurations to identify which methodologies hold up under extreme data scarcity, and which ones silently fail.
-- The central contribution is not a deployed classifier but a rigorous comparative analysis of where standard ML practices break down and what alternatives remain valid when data is fundamentally limited.
+- Can gait patterns reliably distinguish between individuals using wearable sensor data? This project investigates that question under a severe real-world constraint: only 48 samples across 16 classes.
+
+- Rather than forcing a single model to fit inadequate data, this study applies a systematic experimental design: **9 core pipeline configurations** (varying split strategy, oversampling method, and cross-validation approach), each tested across **up to 3 feature engineering variants** (original features, 321-feature aggregation, and 107-feature reduced set), producing 13 notebook versions in total.
+
+- The central contribution is not a deployed classifier but a rigorous comparative analysis of where standard ML practices break down under extreme data scarcity, and which methodologies remain valid.
 
 Key Findings
 ---------------
