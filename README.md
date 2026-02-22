@@ -21,18 +21,21 @@ Dataset
 - Cleaned: gait_final_output_updated.csv
 - This is a genuinely difficult ML problem. With ~3 samples per class, standard train/test splits leave approximately 1 test sample per class, making conventional accuracy metrics unreliable and most oversampling strategies dangerous.
 
-Nine Pipeline Configurations Evaluated
----------------------------------------
+## Pipeline Configurations Evaluated
+
+9 core pipelines × up to 3 feature variants = 13 notebook versions total
+
 | Version | Strategy | Leakage? | Valid? | Key Result |
-|---------|----------|----------|--------|------------|
-| v1_1 | Baseline 67/33 split | No | Limited | 0.00 metrics: data too small |
-| v1_2 | GridSearchCV, no split | No | Limited | KNN best; ~2 samples/class |
-| v1_3 | Aggressive oversampling | No | Invalid | Perfect train, poor test: overfitting |
-| v1_4 | Oversample before split | YES | Invalid | Artificially inflated accuracy |
-| v1_6 | Oversample before CV (LOOCV) | YES | Invalid | 99.4% accuracy: leakage artifact |
-| v1_7 | StratifiedKFold in-pipeline | No | **VALID** | 90%: best valid methodology |
+|---|---|---|---|---|
+| v1_1, v1_1_mf, v1_1_mfr | Baseline 67/33 split (3 feature variants) | No | Limited | 0.00 metrics: data too small |
+| v1_2, v1_2_mfr | GridSearchCV, no split (2 feature variants) | No | Limited | KNN best; ~2 samples/class |
+| v1_3 | Aggressive oversampling | No | **Invalid** | Perfect train, poor test: overfitting |
+| v1_4 | Oversample before split | **YES** | **Invalid** | Artificially inflated accuracy |
+| v1_5 | Oversample outside pipeline | Unclear | **Invalid** | Methodology unclear |
+| v1_6 | Oversample before CV (LOOCV) | **YES** | **Invalid** | 99.4% accuracy: leakage artifact |
+| v1_7, v1_7_mfr | StratifiedKFold in-pipeline (2 feature variants) | No | **Valid** | 90% — best valid methodology |
 | v1_8 | Standard train/test pipeline | No | Limited | 88.2% but unstable |
-| v1_9 | Unsupervised clustering | N/A | **VALID** | 16 classes -> 2 clusters (DBSCAN) |
+| v1_9 | Unsupervised clustering | N/A | **Valid** | 16 classes -> 2 clusters (DBSCAN) |
 
 
 What This Study Demonstrates
