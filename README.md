@@ -55,9 +55,8 @@ Repository Structure
 -----------------------
 ```plaintext
 ├── notebooks/          # Nine pipeline versions (v1_1 through v1_9)
-├── data/
-│   ├── gait_final_output.csv          # Original
-│   └── gait_final_output_updated.csv  # Cleaned
+├── gait_final_output.csv          # Original data
+├── gait_final_output_updated.csv  # Cleaned data
 └── README.md
 ```
 
